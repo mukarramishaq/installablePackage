@@ -6,7 +6,7 @@
     {
         function updateAccountName($bean, $event, $arguments)
         {
-            $bean->name = "My New Account Name (" . time() . ")";
+            $bean->name = "My New Account Name (" . time() . ")".$bean->name;
         }
     }
 
