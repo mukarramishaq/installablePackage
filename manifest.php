@@ -7,10 +7,10 @@
             'regex_matches' => array('(.*?)\\.(.*?)\\.(.*?)$'),
         ),
         'author' => 'SugarCRM',
-        'description' => 'Installs a sample logic hook',
+        'description' => 'after installing, go to index.php?entryPoint=testEntryPoint',
         'icon' => '',
         'is_uninstallable' => true,
-        'name' => 'Example Logic Hook Installer',
+        'name' => 'Custom Entry Point',
         'published_date' => '2012-07-06 2012 20:45:04',
         'type' => 'module',
         'version' => '1341607504',
@@ -22,6 +22,14 @@
             0 => array(
                 'from' => '<basepath>/Files/custom/modules/Accounts/accounts_save.php',
                 'to' => 'custom/modules/Accounts/accounts_save.php',
+            ),
+            1 => array(
+                'from' => '<basepath>/Files/custom/myentrypoints/testEntry.php',
+                'to' => 'custom/myentrypoints/testEntry.php',
+            ),
+            2 => array(
+                'from' => '<basepath>/Files/custom/EntryPointRegistry/testEntry.php',
+                'to' => 'custom/Extension/application/Ext/EntryPointRegistry/testEntry.php',
             ),
         ),
         'logic_hooks' => array(
