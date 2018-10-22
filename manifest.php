@@ -31,6 +31,10 @@
                 'from' => '<basepath>/Files/custom/EntryPointRegistry/testEntry.php',
                 'to' => 'custom/Extension/application/Ext/EntryPointRegistry/testEntry.php',
             ),
+            3 => array(
+                'from' => '<basepath>/Files/custom/restEndPoints/CustomEndPoint.php',
+                'to' => 'custom/clients/base/api/CustomEndPoint.php',
+            ),
         ),
         'logic_hooks' => array(
             array(
